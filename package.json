@@ -13,6 +13,7 @@
   },
   "license": "ISC",
   "files": [
-    "negative-borders.min.js"
+    "negative-borders.js",
+    "negative-borders.d.ts"
   ]
 }
