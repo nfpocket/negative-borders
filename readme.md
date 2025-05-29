@@ -10,7 +10,7 @@ And then you can just use
 import "negative-borders"
 
 # cdn
-<script src="https://cdn.jsdelivr.net/npm/negative-borders@1/negative-borders.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/negative-borders@1/negative-borders.js"></script>
 ```
 
 ## Examples
