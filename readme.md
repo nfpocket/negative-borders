@@ -18,41 +18,41 @@ import "negative-borders"
 ![Example](example.png)
 
 ```html
-<div class="box" data-negative-border data-negative-border-size="50px" data-negative-border-color="orange"></div>
+<div class="box" data-negative-borders data-negative-borders-size="50px" data-negative-borders-color="orange"></div>
 <div
   class="box"
-  data-negative-border
-  data-negative-border-size="50px"
-  data-negative-border-color="orange"
-  data-negative-border-position="top"
+  data-negative-borders
+  data-negative-borders-size="50px"
+  data-negative-borders-color="orange"
+  data-negative-borders-position="top"
 ></div>
 <div
   class="box"
-  data-negative-border
-  data-negative-border-size="50px"
-  data-negative-border-color="orange"
-  data-negative-border-position="right"
+  data-negative-borders
+  data-negative-borders-size="50px"
+  data-negative-borders-color="orange"
+  data-negative-borders-position="right"
 ></div>
 <div
   class="box"
-  data-negative-border
-  data-negative-border-size="50px"
-  data-negative-border-color="orange"
-  data-negative-border-position="left"
+  data-negative-borders
+  data-negative-borders-size="50px"
+  data-negative-borders-color="orange"
+  data-negative-borders-position="left"
 ></div>
 
 <div
   class="box"
-  data-negative-border
-  data-negative-border-size="50px"
-  data-negative-border-color="orange"
-  data-negative-border-show-after="false"
+  data-negative-borders
+  data-negative-borders-size="50px"
+  data-negative-borders-color="orange"
+  data-negative-borders-show-after="false"
 ></div>
 <div
   class="box"
-  data-negative-border
-  data-negative-border-size="50px"
-  data-negative-border-color="orange"
-  data-negative-border-show-before="false"
+  data-negative-borders
+  data-negative-borders-size="50px"
+  data-negative-borders-color="orange"
+  data-negative-borders-show-before="false"
 ></div>
 ```

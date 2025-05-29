@@ -1,17 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
+export const computeNegativeBordersStyles = () => {
   const styleSheet = document.createElement("style");
   document.head.appendChild(styleSheet);
 
-  document.querySelectorAll("[data-negative-border]").forEach((element) => {
-    const position = element.dataset.negativeBorderPosition || "bottom"; // Default position
-    const color = element.dataset.negativeBorderColor || "#000"; // Default color
-    const size = element.dataset.negativeBorderSize || "0px"; // Default size
+  document.querySelectorAll("[data-negative-borders]").forEach((element) => {
+    const position = element.dataset.negativeBordersPosition || "bottom"; // Default position
+    const color = element.dataset.negativeBordersColor || "#000"; // Default color
+    const size = element.dataset.negativeBordersSize || "0px"; // Default size
 
-    const showBefore = element.dataset.negativeBorderShowBefore !== "false"; // Default to true
-    const showAfter = element.dataset.negativeBorderShowAfter !== "false"; // Default to true
+    const showBefore = element.dataset.negativeBordersShowBefore !== "false"; // Default to true
+    const showAfter = element.dataset.negativeBordersShowAfter !== "false"; // Default to true
 
     const id = `negative-border-${Math.random().toString(36).substr(2, 9)}`;
-    element.dataset.negativeBorderId = id;
+    element.dataset.negativeBordersId = id;
 
     let beforeStyles = "";
     let afterStyles = "";
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (beforeStyles) {
       styleSheet.sheet.insertRule(
         `
-        [data-negative-border-id="${id}"]::before {
+        [data-negative-borders-id="${id}"]::before {
           ${beforeStyles}
           ${beforePositionStyles}
         }
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (afterStyles) {
       styleSheet.sheet.insertRule(
         `
-        [data-negative-border-id="${id}"]::after {
+        [data-negative-borders-id="${id}"]::after {
           ${afterStyles}
           ${afterPositionStyles}
         }
@@ -96,11 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ensure the element has position: relative for absolute positioning of pseudo-elements
     styleSheet.sheet.insertRule(
       `
-      [data-negative-border-id="${id}"] {
+      [data-negative-borders-id="${id}"] {
         position: ${elementPosition};
       }
     `,
       styleSheet.sheet.cssRules.length
     );
   });
-});
+};
+
+document.addEventListener("DOMContentLoaded", computeNegativeBordersStyles);

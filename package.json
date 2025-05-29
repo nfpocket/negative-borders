@@ -6,6 +6,7 @@
   "keywords": [
     "negative-borders"
   ],
+  "type": "module",
   "author": "Norman Feiß",
   "repository": {
     "url": "https://github.com/nfpocket/negative-borders"
