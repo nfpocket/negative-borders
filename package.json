@@ -1,0 +1,14 @@
+{
+  "name": "negative-borders",
+  "version": "1.0.0",
+  "description": "A simple js utility for negative borders",
+  "main": "negative-borders.js",
+  "keywords": [
+    "negative-borders"
+  ],
+  "author": "Norman Feiß",
+  "license": "ISC",
+  "files": [
+    "negative-borders.min.js"
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negative borders</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        flex-wrap: wrap;
+        gap: 8rem;
+
+        background-color: #323232;
+        color: white;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: #68e1ff;
+        position: relative;
+      }
+    </style>
+
+    <script src="./negative-borders.js"></script>
+  </head>
+
+  <body>
+    <div class="box" data-negative-border data-negative-border-size="50px" data-negative-border-color="orange"></div>
+    <div
+      class="box"
+      data-negative-border
+      data-negative-border-size="50px"
+      data-negative-border-color="orange"
+      data-negative-border-position="top"
+    ></div>
+    <div
+      class="box"
+      data-negative-border
+      data-negative-border-size="50px"
+      data-negative-border-color="orange"
+      data-negative-border-position="right"
+    ></div>
+    <div
+      class="box"
+      data-negative-border
+      data-negative-border-size="50px"
+      data-negative-border-color="orange"
+      data-negative-border-position="left"
+    ></div>
+
+    <div
+      class="box"
+      data-negative-border
+      data-negative-border-size="50px"
+      data-negative-border-color="orange"
+      data-negative-border-show-after="false"
+    ></div>
+    <div
+      class="box"
+      data-negative-border
+      data-negative-border-size="50px"
+      data-negative-border-color="orange"
+      data-negative-border-show-before="false"
+    ></div>
+  </body>
+</html>
