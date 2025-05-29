@@ -1,6 +1,6 @@
 {
   "name": "negative-borders",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple js utility for negative borders",
   "main": "negative-borders.js",
   "keywords": [
