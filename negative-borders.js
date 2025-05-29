@@ -1,5 +1,5 @@
 export const computeNegativeBordersStylesForElement = (element, styleSheet) => {
-  if (!element) return;
+  if (!document || !document.querySelectorAll || !element || !(element instanceof HTMLElement)) return;
 
   if (!styleSheet) {
     styleSheet = document.createElement("style");
@@ -108,10 +108,16 @@ export const computeNegativeBordersStylesForElement = (element, styleSheet) => {
 };
 
 export const computeNegativeBordersStyles = () => {
+  if (!document || !document.querySelectorAll) return;
+
   const styleSheet = document.createElement("style");
   document.head.appendChild(styleSheet);
 
   document.querySelectorAll("[data-negative-borders]").forEach((element) => computeNegativeBordersStylesForElement(element, styleSheet));
 };
 
-document.addEventListener("DOMContentLoaded", computeNegativeBordersStyles);
+(() => {
+  if (!document) return;
+
+  document.addEventListener("DOMContentLoaded", computeNegativeBordersStyles);
+})();
