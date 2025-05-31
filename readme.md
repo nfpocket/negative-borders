@@ -10,12 +10,14 @@ And then you can just use
 import "negative-borders"
 
 # cdn
-<script src="https://cdn.jsdelivr.net/npm/negative-borders@1/negative-borders.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/negative-borders@1/negative-borders.js"></script>
 ```
 
 ## Examples
 
 ![Example](example.png)
+
+https://codesandbox.io/p/sandbox/84tkpd
 
 ```html
 <div class="box" data-negative-borders data-negative-borders-size="50px" data-negative-borders-color="orange"></div>
